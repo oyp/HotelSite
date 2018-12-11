@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="project1.css" rel='stylesheet' type="text/css" />
+    <title>Pulphus's Hotel Availability</title>
+  </head>
+  <body>
+    <h2>The Pulphus Hotel Availability Resource Guild &#9786;</h2>
+    <h3> <i>Experience the pleasure of picking the BEST hotel for your stay in Seoul! </i></h3>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+-->
+  <form name="selectForm" >
+    <p>
+      Choose between hotels displayed, then reserve your selection.
+        </p>
+    <!-- <p><input id="btn" type="button" value="Reserve Your Room Here" /></p> -->
+  </form>
+<!-- Own ideas >.< -->
+
+<div id="hyaHotel"> <img src="images/hyatt.jpg" alt="Hyatt Hotel Seoul ">
+  <p> HYATT </p>
+<button id="myBtn1">Reserve a Room !</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Hyatt Hotel</h2>
+    </div>
+    <div id="Checking">
+      <br><br>
+      <table align="center">
+        <tr>
+          <td><label> Check in </label></td>
+          <td><label> Check out <br/></td>
+        </tr>
+        <tr>
+          <td><input type="date"/></td>
+          <td><input type="date"/></td>
+        </tr>
+      </table>
+    </label>
+    </div>
+    <br>
+    <center><input style="text-align: center;" type="checkbox" value="dunno"/>I don't know my date</center>
+    <hr/>
+    <br>
+    <table align="center">
+    <tr>
+    <th style="padding: 1px 20px;">Rooms</th>
+    <th style="padding: 1px 20px;">Adults</th>
+    <th style="padding: 1px 20px;">Children</th>
+    </tr>
+    <tr>
+    <td></td>
+    <td><center>Age 18+</center></td>
+    <td><center>0-17</center></td>
+    </tr>
+    <tr>
+    <td><br></td>
+    </tr>
+    <tr>
+    <td><center>
+      <select name="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </center>
+    </td>
+    <td><center>
+      <select name="rooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    <td><center>
+      <select name="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+    <center>
+    <div id="Continue">
+    <button id="button1">Cancel</button>
+    <button id="button2">Continue</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    </center>
+    <br><br>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="lotHotel"> <img src="images/lotte.jpg" alt="Lotte Hotel Seoul "> <p> LOTTE </p>
+  <button id="myBtn2">Reserve a Room !</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Lotte Hotel</h2>
+    </div>
+    <div id="Checking">
+      <br><br>
+      <table align="center">
+        <tr>
+          <td><label> Check in </label></td>
+          <td><label> Check out <br/></td>
+        </tr>
+        <tr>
+          <td><input type="date"/></td>
+          <td><input type="date"/></td>
+        </tr>
+      </table>
+    </label>
+    </div>
+    <br>
+    <center><input style="text-align: center;" type="checkbox" value="dunno"/>I don't know my date</center>
+    <hr/>
+    <br>
+    <table align="center">
+    <tr>
+    <th style="padding: 1px 20px;">Rooms</th>
+    <th style="padding: 1px 20px;">Adults</th>
+    <th style="padding: 1px 20px;">Children</th>
+    </tr>
+    <tr>
+    <td></td>
+    <td><center>Age 18+</center></td>
+    <td><center>0-17</center></td>
+    </tr>
+    <tr>
+    <td><br></td>
+    </tr>
+    <tr>
+    <td><center>
+      <select name="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </center>
+    </td>
+    <td><center>
+      <select name="rooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    <td><center>
+      <select name="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+    <center>
+    <div id="Continue">
+    <button id="button1">Cancel</button>
+    <button id="button2">Continue</button>
+    </div>
+    </center>
+    <br><br>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id ="sheHotel"> <img src="images/sheraton.jpg" alt="Sheraton Hotel Seoul ">
+  <p> SHERATON  </p>
+  <button id="myBtn3">Reserve a Room !</button>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal3" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Sheratonm Hotel</h2>
+    </div>
+    <div id="Checking">
+      <br><br>
+      <table align="center">
+        <tr>
+          <td><label> Check in </label></td>
+          <td><label> Check out <br/></td>
+        </tr>
+        <tr>
+          <td><input type="date"/></td>
+          <td><input type="date"/></td>
+        </tr>
+      </table>
+    </label>
+    </div>
+    <br>
+    <center><input style="text-align: center;" type="checkbox" value="dunno"/>I don't know my date</center>
+    <hr/>
+    <br>
+    <table align="center">
+    <tr>
+    <th style="padding: 1px 20px;">Rooms</th>
+    <th style="padding: 1px 20px;">Adults</th>
+    <th style="padding: 1px 20px;">Children</th>
+    </tr>
+    <tr>
+    <td></td>
+    <td><center>Age 18+</center></td>
+    <td><center>0-17</center></td>
+    </tr>
+    <tr>
+    <td><br></td>
+    </tr>
+    <tr>
+    <td><center>
+      <select name="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </center>
+    </td>
+    <td><center>
+      <select name="rooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    <td><center>
+      <select name="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+    <center>
+    <div id="Continue">
+    <button id="button1">Cancel</button>
+    <button id="button2">Continue</button>
+    </div>
+    </center>
+    <br><br>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="wesHotel"> <img src="images/westin.jpg" alt="Westin Hotel Seoul ">
+  <p > WESTIN </p>
+  <button id="myBtn4">Reserve a Room !</button>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal4" class="modal1">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Westin Hotel</h2>
+    </div>
+    <div id="Checking">
+      <br><br>
+      <table align="center">
+        <tr>
+          <td><label> Check in </label></td>
+          <td><label> Check out <br/></td>
+        </tr>
+        <tr>
+          <td><input type="date"/></td>
+          <td><input type="date"/></td>
+        </tr>
+      </table>
+    </label>
+    </div>
+    <br>
+    <center><input style="text-align: center;" type="checkbox" value="dunno"/>I don't know my date</center>
+    <hr/>
+    <br>
+    <table align="center">
+    <tr>
+    <th style="padding: 1px 20px;">Rooms</th>
+    <th style="padding: 1px 20px;">Adults</th>
+    <th style="padding: 1px 20px;">Children</th>
+    </tr>
+    <tr>
+    <td></td>
+    <td><center>Age 18+</center></td>
+    <td><center>0-17</center></td>
+    </tr>
+    <tr>
+    <td><br></td>
+    </tr>
+    <tr>
+    <td><center>
+      <select name="adults">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+    </center>
+    </td>
+    <td><center>
+      <select name="rooms">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    <td><center>
+      <select name="children">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select></center>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+    <center>
+    <div id="Continue">
+    <button id="button1">Cancel</button>
+    <button id="button2">Continue</button>
+    </div>
+    </center>
+    <br><br>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+
+
+
+
+
+    <script src='project1.js'>
+    </script>
+  </body>
+</html>

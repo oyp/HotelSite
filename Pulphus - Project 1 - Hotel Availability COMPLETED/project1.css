@@ -1,0 +1,75 @@
+body{
+  background-color: rgba(254, 250, 180, 0.52);
+}
+
+#hyaHotel, #lotHotel, #sheHotel, #wesHotel{
+  float: left;
+  border: 4px dotted rgb(83, 9, 61);
+  position: relative;
+  margin-right: 2em;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  width: 45%;
+  margin-left: 60px;
+  text-align: center;
+  height: 450px;
+  box-sizing: border-box;
+  background-color: white;
+  background-size: 100% 100%;
+
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: fuchsia; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+h2, h3{
+  color: forestgreen;
+  text-shadow: 2px 2px 2px #ffff;
+  text-indent: 50px;
+  text-align: center;
+
+}
+
+p{
+  color: black;
+  text-shadow: 0.5px 0.5px 0.5px green;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+#msgNote{
+  color:cyan;
+  background: grey;
+  width:50%;
+  padding:1em;
+  margin: auto;
+  margin-top: 0.25em;
+  font-family: sans-serif;
+  height: 200px;
+}
+
+#note{
+  background-color: rgba(0,0,0,0.6);
+  width:100%;
+  height: 180%;
+  position: absolute;
+  top:0;
+  text-align: center;
+
+}
